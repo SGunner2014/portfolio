@@ -1,0 +1,176 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400&display=swap');
+
+body {
+    margin: 0;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 400;
+}
+
+p {
+    margin: 0;
+}
+
+.main-text {
+    font-size: 49px;
+}
+
+.secondary-text {
+    font-size: 37px;
+}
+
+.tertiary-text {
+    font-size: 26px;
+}
+
+.standard-text {
+    font-size: 20px;
+}
+
+.faded {
+    margin-top: 8px;
+    color: #707070;
+}
+
+.tertiary-text.first {
+    margin-bottom: 10px;
+}
+
+.landing {
+    background-color: #3D3D3D;
+    height: 100vh;
+    width: 100vw;
+    display: grid;
+    grid-template-areas: 'top'
+        'middle'
+        'bottom';
+    grid-auto-rows: 1fr;
+    color: #CCCCCC;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.landing > .middle {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.landing > .bottom {
+    display: flex;
+    align-items: flex-end;
+    flex-direction: column;
+    justify-content: flex-end;
+}
+
+.landing > .bottom > div {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.logo {
+    height: 44px;
+    width: 44px;
+}
+
+.landing > .logo {
+    float: end;
+    margin-top: 16px;
+    margin-left: 16px;
+}
+
+
+.landing .splash * {
+    text-align: center;
+}
+
+.arrow-down {
+    margin-bottom: 50px;
+}
+
+.arrow-up {
+    margin-top: 50px;
+}
+
+.secondary {
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    position: absolute;
+    background-color: #CCCCCC;
+    color: #3D3D3D;
+}
+
+.portfolio {
+    display: none;
+    position: absolute;
+    width: 100vw;
+    height: 100vh;
+    left: 0;
+}
+
+.portfolio > .top {
+    width: 100vw;
+    display: grid;
+    grid-template-areas: 'first'
+        'second';
+    grid-auto-rows: 1fr;
+}
+
+.portfolio > .top > div {
+    width: 100vw;
+    justify-content: center;
+    display: flex;
+}
+
+.portfolio > .content {
+    width: 70%;
+    margin-left: 15%;
+    margin-right: 15%;
+    display: grid;
+}
+
+.project {
+    margin: 0;
+    display: grid;
+    grid-template-areas: 'left right';
+    grid-auto-rows: 1fr;
+    grid-gap: 1px;
+}
+
+.project > .left {
+    border-right: #3D3D3D solid 1px;
+    display: flex;
+    flex-direction: column;
+}
+
+.project > .left > div {
+    width: 100%;
+    flex-grow: 0;
+    text-align: right;
+}
+
+.project > .left > div > * {
+    margin-right: 32px;
+}
+
+.project > .left > .bottom {
+    display: flex;
+    flex-direction: row-reverse;
+}
+
+.project-heading {
+    margin-top: 0;
+}
+
+.project > .right {
+    width: 100%;
+    margin-left: 36px;
+    display: flex;
+}
+
+.about {
+    display: none;
+}
